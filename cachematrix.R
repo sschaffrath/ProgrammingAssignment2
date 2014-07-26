@@ -1,8 +1,8 @@
 ## The two functions wotk together to avoid doing repeating computations. Whenever you try to invert a Matrix,
-##cacheSolve will check if the result is already available through getSolve in makeCacheMatrix. If this is not posible,
-##then cacheSolve will effectively do the computations and update the result through setSolve (defined in mCM)
+##cacheSolve will check if the result is already available through getminv in makeCacheMatrix. If this is not posible,
+##then cacheSolve will effectively do the computations and update the result through setminv (defined in mCM)
 
-## The function defines a set of auxiliary functions and a vector of cached matrices and its inverses (if already computed)
+## The function defines a set of auxiliary functions and a list of cached matrices and its inverses (if already computed)
 
 makeCacheMatrix <- function(x = matrix()) {
         minv <- NULL
